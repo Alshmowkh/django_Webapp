@@ -1,0 +1,16 @@
+
+{% extends "index.html"%}
+{%block title%}
+Articles
+{%endblock%}
+{%block body%}
+<div>
+    <h1> Articles</h1>
+    {%for a in object_list%}
+    <ul>
+        <!-- <li> <a href="{{a.get_absolute_url}}">{{a.title}}</a> </li> -->
+        <li> <a href="{{a.id}}">{{a.title}}</a> </li>
+    </ul>
+    {%endfor%}
+</div>
+{%endblock%}

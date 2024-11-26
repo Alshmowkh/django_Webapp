@@ -1,0 +1,29 @@
+{% extends 'index.html'%}
+
+{%block title%} Students {%endblock%}
+{%block body%}
+<hr>
+<h2 >{{var}}</h2>
+<hr>
+<h1 class="myclass2">Students</h1>
+
+<ol>
+{%for s in students%}
+<li><a href="{{s.student_ID}}">{{s}}</a></li>
+{%endfor%}
+</ol>
+
+
+<form name="form1" method="post">
+  <div class="row2">
+  {{formy}}
+  <input type="submit" value="add" name="submit">
+  </div>
+</form>
+
+<form name="form2">
+    <input type="text" name="txt2"><br>
+    <input type="submit">
+</form>
+
+{%endblock%}

@@ -1,0 +1,39 @@
+{% extends "index.html"%}
+
+<p id="txt">walasdflkaf</p>
+<script>
+    try{
+      
+let element=document.getElementById('txt');
+document.cookie="saeed=masoad;";
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+element.textContent=document.cookie;
+console.log(document.cookie);
+    }catch(e){
+        console.log(e);
+    }
+
+</script>
+
+<h1 id="demo">List</h1>
+
+{%block body%}
+<div><h2 style="border:1 solid red">{{message}}</h2></div>
+<h3> {{var}} </h3>
+
+<ol>
+{%for k,v in dict.items%}
+<li style="font-size:20pt;">{{k}}={{v}}</li>
+{%endfor%}
+</ol>
+<hr>
+<ol>
+{%for i in list%}
+<li style="font-size:20pt;">{{i}}</li>
+{%endfor%}
+</ol>
+<!-- {%for i in list%}
+"{{i}}": request.{{i}},<br> 
+{%endfor%} -->
+{%endblock%}
+{%block title%} Temporary {%endblock%}

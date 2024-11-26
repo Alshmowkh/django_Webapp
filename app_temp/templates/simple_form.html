@@ -1,0 +1,12 @@
+{% extends "index.html"%}
+{%block title%} Simple Form {%endblock%}
+{%block body%}
+    <h1>Cross-Site Scripting vulnerable</h1>
+   <!-- <p> <script>alert("Waaaaw");</script></p> -->
+   <!-- <script>alert("I am xss attack!");</script> -->
+    <form method="get">
+        <input type="text" value={{data1}} name="txt_field">
+        <input type="submit" value="script">
+    </form>
+    {{xss}}
+{%endblock%}

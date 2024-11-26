@@ -1,0 +1,6 @@
+body{
+	background-image: linear-gradient('#abc','#cba')
+	}
+h1{
+	color:blue;
+}

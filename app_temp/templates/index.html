@@ -1,0 +1,45 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'CSS.css' %}">
+    <link rel="stylesheet" href="{% static 'bootsrap_min.css' %}">
+    <style>
+        #container {
+            background-color: aliceblue;
+            border: 1px solid red;
+            height: 50px;
+            text-align: center;
+            font-size: 30pt;
+            display: flex;
+           justify-content: space-around;
+           list-style-type: none;
+        }
+    </style>
+<title>{%block title%}{%endblock%}</title>
+
+</head>
+<body>
+    <div class="header">
+        <ul id="container">
+            <li><a href="/index">home</a></li>
+            <li><a href="/tempHTML">Temp</a></li>
+            <li><a href="/simple_form">Form</a></li>
+            <li><a href="/api">API</a></li>
+            <li><a href="/students">Students</a></li>
+    
+        </ul>
+    
+    </div>
+    <script>
+        //  window.alert('yes');
+        let element=document.querySelector('.list');
+        element.textContent='A';
+       
+        </script>
+        <p>walasdflkaf</p>
+        <h1 class="list">List</h1>
+    {%block body%}
+    {%endblock%}
+</body>
+</html>
