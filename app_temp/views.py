@@ -50,7 +50,7 @@ def getSymmetricKey():
 
 def tempHTML(request):
 
-    # list="hello"
+    list="hello"
     # template=loader.get_template("tempHTML.html")
     # return HttpResponse(template.render())
     # return render(request,'tempHTML.html',{'c':'C'})
